@@ -1,0 +1,330 @@
+<resources>
+    <string name="app_name">Al2gether</string>
+
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="sign_out">Sign out</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="select_intrest">Select Your Interest</string>
+    <string name="login_txt">Login</string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="update">Update</string>
+    <string name="profile_txt">Profile</string>
+    <string name="help">Help</string>
+    <string name="save">Save</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="hint_name">name</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="reset_password">Submit</string>
+    <string name="login_facebook">Login with Facebook</string>
+    <string name="login_now_txt">Login Now</string>
+
+    <!--Login-->
+    <string name="rember_me">Remember me</string>
+    <string name="already_have_account1">Already have an account\? </string>
+    <string name="already_have_account2">Log in Now</string>
+    <string name="dont_have_account1">Don\'t have an account yet\? </string>
+    <string name="dont_have_account2"> Sign up Now</string>
+    <string name="or_txt">OR</string>
+    <string name="empty"></string>
+
+    <string name="what_in">What is in your mind....</string>
+    <string name="show_all_comments">Show All Comments</string>
+    <string name="view_less_comments">View Less Comments</string>
+
+    <!--News request-->
+    <string name="name_news_org">Name Of News Org</string>
+    <string name="name_company">Name Of Company</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="name_contact">Name Of Contact</string>
+    <string name="acting_off_txt">Are you acting as official Rep for this account?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="major_outlet_txt">Is this what is normally considered a major news outlet?</string>
+    <string name="niche_news_txt">Is this a niche News Outlet?</string>
+    <string name="foucsed_txt">if Yes what areas is it focused on</string>
+    <string name="req_news_account">Request for News Account</string>
+    <string name="req_content_account">Request for Content Account</string>
+
+    <string name="account_name">Account Name</string>
+    <string name="adult_txt">Will your account be geared towards adult material primarily?</string>
+    <string name="adult_desc_txt">Selecting this option doesn\'t mean all your posts must be labelled as adult, however you will
+                                  have to remove the adult content mark yourself when making a submission that does not pertain to adult content</string>
+
+    <!--Create Notes-->
+    <string name="notes_from">From</string>
+    <string name="age">Age</string>
+    <string name="i_am">I Am</string>
+    <string name="looking_for">Looking For</string>
+    <string name="distance">Distance(in miles)</string>
+    <string name="seeking">Seeking</string>
+    <string name="respond_with_pic">Responder must reply with pic</string>
+    <string name="notes">What is in your mind</string>
+    <string name="create_notes">+ Post Note</string>
+
+    <!--Filter Spinner-->
+    <string-array name="age_array">
+        <item>none</item>
+        <item>18–30</item>
+        <item>31–40</item>
+        <item>41–50</item>
+        <item>51+</item>
+    </string-array>
+
+
+    <!--Bottom Nav bar-->
+    <string name="menu_1">Home</string>
+    <string name="menu_2">Worldwide</string>
+    <string name="menu_4">Profile</string>
+    <string name="menu_5">C2G</string>
+    <string name="menu_6">Notes</string>
+
+    <string name="menu_3">More</string>
+
+    <string name="news_site">News Site</string>
+    <string name="content_account">Content Account</string>
+    <string name="podcaset_acctn">Podcast</string>
+
+    <!--Facebook Login-->
+    <string name="facebook_app_id">2390079624558878</string>
+    <string name="fb_login_protocol_scheme">fb2390079624558878</string>
+
+    <!--//Custom Text font-->
+    <string name="font_normal">normal</string>
+    <string name="font_bold">bold</string>
+    <string name="font_italic">italic</string>
+    <string name="font_light">light</string>
+    <string name="title_activity_maps">Map</string>
+
+    <array name="GenderList">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Agender</item>
+        <item>Androgyne</item>
+        <item>Androgynous</item>
+        <item>Bigender</item>
+
+        <item>Cis</item>
+        <item>Cisgender</item>
+        <item>Cis Female</item>
+        <item>Cis Male</item>
+        <item>Cis Man</item>
+        <item>Cis Woman</item>
+
+        <item>Cisgender Female</item>
+        <item>Cisgender Male</item>
+        <item>Cisgender Man</item>
+        <item>Cisgender Woman</item>
+        <item>Female to Male</item>
+        <item>FTM</item>
+        <item>Gender Fluid</item>
+        <item>Gender Nonconforming</item>
+        <item>Gender Questioning</item>
+        <item>Gender Variant</item>
+        <item>Genderqueer</item>
+        <item>Intersex</item>
+    </array>
+
+    <array name="IntrestList">
+        <item>Entertainment</item>
+        <item>Politics</item>
+        <item>International/world news</item>
+        <item>Science</item>
+        <item>Comedy</item>
+        <item>Music</item>
+        <item>Hip-Hop</item>
+        <item>Country</item>
+        <item>Urban</item>
+        <item>Cooking</item>
+        <item>Fashion</item>
+        <item>Healthy living</item>
+        <item>Recreation</item>
+        <item>Realty</item>
+        <item>Random</item>
+        <item>Business</item>
+
+        <item>Sports</item>
+        <item>History</item>
+        <item>Career</item>
+        <item>Travel</item>
+        <item>Education</item>
+    </array>
+
+    <array name="looking_up_list">
+        <item>Friend</item>
+        <item>Date</item>
+        <item>Chat</item>
+        <item>Casual</item>
+    </array>
+
+    <array name="age_group_list">
+        <item>0-8</item>
+        <item>8-18</item>
+        <item>18-28</item>
+        <item>28-38</item>
+        <item>38-48</item>
+        <item>48-58</item>
+        <item>58-68</item>
+        <item>68+</item>
+    </array>
+
+    <string-array name="distance_lookup">
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_profile">Profile</string>
+    <string name="string_logout">Logout</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="world_wide_id">Worldwide ID</string>
+    <string name="who_can_see">Who can see (gender)</string>
+    <string name="who_can_see_age">Who can see age</string>
+
+    <!--    For Intro Slider-->
+    <string name="next">Next</string>
+    <string name="homeview">Homeview</string>
+    <string name="worldwide">Worldwide</string>
+    <string name="content">Content, Podcast, News</string>
+    <string name="rewards">Rewards</string>
+
+    <string name="discover_text"> Share videos or selfies, while you get matched with user content from your own interests.</string>
+    <string name="shop_text"> Once verified, obtain full access. Post thoughts and comments and upload photos and videos from your phone.</string>
+    <string name="offers_text"> Organize and share your specific content with your own Special User account.</string>
+    <string name="get_started">Get Started</string>
+    <string name="mature">Mature</string>
+    <string name="alert_tab">Alerts</string>
+    <string name="profile_tab">Profile</string>
+    <string name="message_tab">Message</string>
+    <string name="create_tab">Create</string>
+    <string name="music_tab">Music</string>
+    <string name="user_pics">user_pics</string>
+    <string name="write_a_comment">write a comment...</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="age_caps">AGE</string>
+    <string name="gender_caps">GENDER</string>
+    <string name="bio">BIO</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="filter">Filter</string>
+    <string name="account_type">ACCOUNT TYPE</string>
+    <string name="mature_caps">MATURE</string>
+    <string name="hide_mature_content">Hide Mature Content</string>
+    <string name="type_new_message">Type new message.</string>
+    <string name="come2gether_filters">Come2Gether Filters</string>
+    <string name="set_age_range">Set Age Range</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="interested_in">INTERESTED IN</string>
+    <string name="casual">Casual</string>
+    <string name="dating">Dating</string>
+    <string name="meet_ups">Meet-Ups</string>
+    <string name="chatting">Chatting</string>
+    <string name="messages">Messages</string>
+    <string name="appid">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="nativeid">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <string name="ad_attribution" translatable="false">Ad</string>
+
+    <string name="AudioCompressor">AudioCompressor</string>
+    <string name="AudioCutter">AudioCutter</string>
+    <string name="AudioJoiner">AudioJoiner</string>
+    <string name="AudioVideoMixer">AudioVideoMixer</string>
+    <string name="FastMotionVideo">FastMotionVideo</string>
+    <string name="MainFolderName">VEditor</string>
+    <string name="PhotoToVideo">PhotoToVideo</string>
+    <string name="SlowMotionVideo">SlowMotionVideo</string>
+    <string name="VideoCollage">VideoCollage</string>
+    <string name="VideoCompressor">VideoCompressor</string>
+    <string name="VideoConverter">VideoConverter</string>
+    <string name="VideoCroper">VideoCroper</string>
+    <string name="VideoCutter">VideoCutter</string>
+    <string name="VideoJoiner">VideoJoiner</string>
+    <string name="VideoMirror">VideoMirror</string>
+    <string name="VideoMute">VideoMute</string>
+    <string name="VideoReverse">VideoReverse</string>
+    <string name="VideoRotate">VideoRotate</string>
+    <string name="VideoSplitter">VideoSplitter</string>
+    <string name="VideoToGIF">VideoToGIF</string>
+    <string name="VideoToImage">VideoToImage</string>
+    <string name="VideoToMP3">VideoToMP3</string>
+    <string name="VideoWatermark">VideoWatermark</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="alert_title_success">Success</string>
+    <string name="app_folder_name2">VideoCollage</string>
+    <string name="artist_name">RingtoneMaker</string>
+    <string name="bad_extension_error">Sorry, RingtoneMaker is not yet able to edit files of type</string>
+    <string name="cancel">Cancel</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="delete_tmp_error">Error deleting temporary file</string>
+    <string name="end_marker">End marker</string>
+    <string name="no_extension_error">Sorry, RingtoneMaker can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
+    <string name="no_sdcard">Sorry, can not run unless you have an SD Card inserted.</string>
+    <string name="no_space_error">Your SD card is full, there is not enough space to save this file.</string>
+    <string name="no_unique_filename">Unable to find unique filename</string>
+    <string name="play">Play</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_saving">Saving…</string>
+    <string name="read_error">Error reading file</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="sdcard_readonly">Sorry, the SD Card is mounted as read-only.</string>
+    <string name="sdcard_shared">Sorry, can not run while your handset is mounted as a USB device.</string>
+    <string name="shipped_ffmpeg_version">n2.4.2</string>
+    <string name="start_marker">Start marker</string>
+    <string name="stop">Stop</string>
+    <string name="too_small_error">Can\'t save a file that small, try making it longer.</string>
+    <string name="write_error">Error writing file</string>
+
+    <string name="go_back_title">Want to go back?</string>
+
+    <string name="sure_close_app">Want to close the app?</string>
+    <string name="close">Close</string>
+
+    <string name="pause">pause</string>
+    <string name="app_record">Record Video</string>
+    <string name="lbl_gallery">Gallery</string>
+    <string name="title_select_media">Select Media</string>
+    <string name="lbl_image">Image</string>
+    <string name="lbl_camera">Image</string>
+    <string name="video">Video</string>
+    <string name="title_select_image">Select Media</string>
+    <string name="sound">Sound</string>
+    <string name="deep">DeepAr</string>
+    <string name="media">Media</string>
+    <string name="editVideo">Edit Video</string>
+    want_edit
+    <string name="want_edit">Do you want to edit video?</string>
+    <string name="postVideo">Post Video</string>
+    <string name="want_post">Continue To Post Video</string>
+    <string name="postImage">Post Image</string>
+    <string name="want_post_Image">Continue to post Image?</string>
+    <string name="upload">Upload</string>
+    <string name="capture">Capture</string>
+</resources>

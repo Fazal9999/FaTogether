@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg_image">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_transparent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_img1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_rect_gray_border_with_roundedcorner"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/profile_img1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/act_left_padding"
+                android:paddingRight="@dimen/act_right_padding">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/notes_from"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_from"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/age"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_age"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:enabled="false" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/i_am"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_iam"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/looking_for"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_looking_for"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/distance"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_distance"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/seeking"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/notes_seeking"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.kptech.peps.customview.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/respond_with_pic"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/notes_pic_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/notes_pic_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:id="@+id/notes_pic_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="No"
+                            android:textSize="12dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/who_can_see"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/who_can_see"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/who_can_see_age"
+                    android:textColorHint="@color/hint_color">
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:id="@+id/who_can_see_age"
+                        style="@style/CustomEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/notes_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_rect_gray_border"
+                    android:hint="@string/notes"
+                    android:minLines="4"
+                    android:gravity="top|left"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.kptech.peps.customview.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Allow others to see my profile"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/see_profile_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textSize="12dp" />
+
+                        <RadioButton
+                            android:id="@+id/see_profile_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="No"
+                            android:textSize="12dp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.kptech.peps.customview.CustomButton
+                    android:id="@+id/notes_create_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/create_notes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

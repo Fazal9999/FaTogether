@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar_layout"/>
+    <RelativeLayout
+        android:id="@+id/post_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:background="@color/group_rect_detail_bg"
+        android:layout_height="wrap_content">
+
+        <com.kptech.peps.customview.CustomEditText
+            android:id="@+id/write_comment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:hint="Write messege"
+            android:background="@null"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pencil_icon" />
+
+        <ImageView
+            android:id="@+id/grp_post_comment"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/edt_medium_height"
+            android:layout_alignParentRight="true"
+            android:padding="9dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/send_icon" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:text="No chat found"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"></TextView>
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:background="@color/white_color"
+    tools:context="com.kptech.peps.activity.FilterActivity">
+
+    <RelativeLayout
+        android:id="@+id/filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white_color"
+        android:elevation="5dp">
+
+        <com.kptech.peps.customview.CustomFontTextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            app:textFont="@string/font_bold"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_bar"
+        android:id="@+id/account_type_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_type"
+            android:textSize="12sp"
+            android:textColor="@color/Grey_600"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/content_account"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"/>
+
+            <CheckBox
+                android:id="@+id/account_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mature_caps"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/Grey_600"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hide_mature_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/mature_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:thumbTint="@color/white_color"
+                android:elevation="5dp"
+                android:checked="true"
+                android:theme="@style/switch_colors"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

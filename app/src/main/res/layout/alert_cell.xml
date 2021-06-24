@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:paddingBottom="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:background="@color/white_color"
+        android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/alert_pic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="0.25"
+                android:src="@drawable/ic_user_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/alert_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joe"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/alert_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/alert_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dating"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/Grey_500"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/alert_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 day ago"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="0.25"
+            android:textColor="@color/Grey_500"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/Grey_400"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

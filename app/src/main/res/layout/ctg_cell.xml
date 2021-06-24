@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white_color">
+
+        <ImageView
+            android:id="@+id/ctg_pfp"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_user_default_icon"
+            android:background="@color/Grey_400"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/user_pics" />
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/ctg_firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joe"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/ctg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/ctg_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dating"
+                android:layout_below="@+id/ctg_firstName"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/ctg_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:layout_below="@+id/ctg_gender"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+        </RelativeLayout>
+</LinearLayout>

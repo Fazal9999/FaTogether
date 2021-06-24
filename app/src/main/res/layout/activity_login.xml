@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg_image"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_transparent"/>
+
+
+        <ImageView
+            android:id="@+id/loggo"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/viw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/loggo"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/act_left_padding"
+            android:paddingRight="@dimen/act_right_padding">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign in to your account"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/email_hint"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/login_email"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/password_hint"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/login_pwd"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:id="@+id/login_remeber_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/login_remeber_pwd"
+                    android:gravity="center_vertical"
+                    android:text="@string/rember_me"
+                    android:textSize="@dimen/lab_small_txt_size"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/forget_pass_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/forgot_pwd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+                    app:textFont="@string/font_bold"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:id="@+id/tnc_chek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:buttonTint="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/tnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tnc_chek"
+                    android:gravity="center_vertical"
+                    android:text="I accept term and conditions."
+                    android:textSize="@dimen/lab_small_txt_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_email_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/login_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp">
+
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/or_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/or_txt"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kptech.peps.customview.CustomFontTextView
+                android:id="@+id/signup_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dont_have_account1"
+                android:textSize="14dp" />
+
+            <com.kptech.peps.customview.CustomFontTextView
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/dont_have_account2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                app:textFont="@string/font_bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

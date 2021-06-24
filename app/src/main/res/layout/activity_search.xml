@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:background="@color/white_color"
+    tools:context="com.kptech.peps.activity.SearchActivity">
+
+    <SearchView
+        android:id="@+id/simpleSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Al2Gether"
+        android:iconifiedByDefault="false"
+        android:theme="@style/Theme.AppCompat.Light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/simpleSearchView"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:padding="4dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/empty_search"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:text="No Search Results Found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

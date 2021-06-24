@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_menu1"
+        android:icon="@drawable/ic_alert_tab"
+        android:title="@string/alert_tab"
+        app:showAsAction="ifRoom|withText"  />
+
+    <item
+        android:id="@+id/action_menu2"
+        android:icon="@drawable/ic_music_tab"
+        android:title="@string/music_tab"
+        app:showAsAction="ifRoom|withText"  />
+
+    <item
+        android:id="@+id/action_menu4"
+        android:icon="@drawable/ic_create_tab"
+        android:title="@string/create_tab"
+        app:showAsAction="always|withText"  />
+
+    <item
+        android:id="@+id/action_menu5"
+        android:icon="@drawable/ic_dm_tab"
+        android:title="@string/message_tab"
+        app:showAsAction="ifRoom|withText"  />
+
+    <item
+        android:id="@+id/action_menu3"
+        android:icon="@drawable/ic_profile_tab"
+        android:title="@string/profile_tab"
+        app:showAsAction="always|withText" />
+
+</menu>

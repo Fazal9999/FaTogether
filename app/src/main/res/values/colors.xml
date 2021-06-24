@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001e80</color>
+    <color name="colorPrimaryDark">#00061a</color>
+    <color name="sky_blue">#001e80</color>
+
+    <color name="colorAccent">#001e80</color>
+
+    <color name="colorHighlight">#F4EEFC</color>
+
+    <color name="ripplecolor">#909090</color>
+    <color name="ripple_test_color">#7D2FE0</color>
+    <color name="white_color">#FFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="act_bg_color">#fcfafe</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="label_color">#9b9b9b</color>
+    <color name="hint_color">#d3d3d3</color>
+    <color name="divider_line_color">#8b8b8b</color>
+    <color name="light_black">#5a5a5a</color>
+
+    <color name="blue">#006FB1</color>
+    <color name="dark_line_color">#9b9b9b</color>
+    <color name="light_gray">#9b9b9b</color>
+    <color name="black">#000000</color>
+    <color name="row_line_color">#C2C2C2</color>
+    <color name="text_color">#5a5a5a</color>
+    <color name="nav_log_bg">#f2eafb</color>
+
+    <color name="list_row_bg">#DDCEE3</color>
+    <color name="sensor_list_line_color">#dfdce0</color>
+    <color name="light_white">#f5f4f5</color>
+    <color name="light_pink">#fdedeb</color>
+    <color name="outer_circle_color">#efd5f8</color>
+
+    <color name="action_selected">#fff6e6</color>
+    <color name="action_selected_border">#fde1ab</color>
+    <color name="facebook_start_color">#3b5998</color>
+    <color name="facebook_end_color">#899bc1</color>
+
+    <color name="button_blue_color">#405994</color>
+    <!---->
+    <color name="tab_sel_color">@color/colorAccent</color>
+    <color name="tab_unsel_color">#9b9b9b</color>
+    <color name="bottom_nav_bar_color">@color/white_color</color>
+
+    <color name="group_rect_bg_color">#EBE8FB</color>
+    <color name="group_rect_detail_bg">#efecfb</color>
+    <color name="group_det_statubar_color">#0c5387</color>
+
+    <color name="green">#54D545</color>
+    <color name="red">#E43942</color>
+
+    <color name="transparent_new">#41000000</color>
+    <color name="Button_Normal_Color">#ff252525</color>
+    <color name="Button_Selected_Color">#ff0089ff</color>
+    <color name="Footer_Color">#ffffffff</color>
+    <color name="Header_Font_Color">#ff252525</color>
+    <color name="Sticker_BG_Color">#fff6f6f6</color>
+    <color name="Sticker_Border_Color">#ffffffff</color>
+    <color name="Sticker_Selected_Color">#ffe3e3e3</color>
+    <color name="Stroke">#ff0089ff</color>
+
+    <color name="black_translucent">#50000000</color>
+    <color name="borderColor">#b0b4b9</color>
+    <color name="color_white_color">#ffffffff</color>
+    <color name="seekbargray">#ff838383</color>
+    <color name="textColor">#2d2c2c</color>
+    <color name="trans">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="waveform_unselected">#535353</color>
+    <color name="waveform_unselected_bkgnd_overlay">#ffd6d7d7</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="timecode">#000000</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="image">#ff2871</color>
+
+    <color name="red_50">#FFEBEE</color>
+    <color name="red_100">#FFCDD2</color>
+    <color name="red_200">#EF9A9A</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_400">#EF5350</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_600">#E53935</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="red_800">#C62828</color>
+    <color name="red_900">#B71C1C</color>
+    <color name="red_A100">#FF8A80</color>
+    <color name="red_A200">#FF5252</color>
+    <color name="red_A400">#FF1744</color>
+    <color name="red_A700">#D50000</color>
+
+    <color name="image_text">#000000</color>
+    <color name="backgraunds">#ffffff</color>
+    <color name="blue_grey_700">#37474f</color>
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_95">#1a1a1a</color>
+    <color name="grey_100_">#0d0d0d</color>
+</resources>
+

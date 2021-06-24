@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/blue"
+                android:text="Home Post"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".6dp"
+                android:background="@color/divider_line_color"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/blue"
+                android:text="Worldwide Post"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".6dp"
+                android:background="@color/divider_line_color"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                android:text="News Post"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".6dp"
+                android:background="@color/divider_line_color"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/blue"
+                android:text="Content Post"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".6dp"
+                android:background="@color/divider_line_color"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                android:text="Podcast Post"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/cancel_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:text="Cancel"
+            android:textSize="@dimen/text_size" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

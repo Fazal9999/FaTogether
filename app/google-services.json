@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "825558771286",
+    "firebase_url": "https://al2gether-8c92b.firebaseio.com",
+    "project_id": "al2gether-8c92b",
+    "storage_bucket": "al2gether-8c92b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825558771286:android:c172ba2cd9090045427df7",
+        "android_client_info": {
+          "package_name": "com.levyj.al2gether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825558771286-qclhiijp8eejbjl7qeoo0knuufucvofe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEdHj7k_K-tS6-HPT3354rAOMMao7G-t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825558771286-qclhiijp8eejbjl7qeoo0knuufucvofe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "825558771286-cm9cihemd5lqaquv4dvoin9unc6qdgrj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.a2g.levyj.Al2gether"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

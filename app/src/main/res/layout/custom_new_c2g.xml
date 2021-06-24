@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm our information\nfor Come2Gether"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_user_pic"
+        android:layout_below="@+id/top_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/new_user_pic"/>
+
+    <LinearLayout
+        android:layout_width="225dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/new_user_pic"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="8dp"
+    android:id="@+id/name_view"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textSize="14sp"
+        android:textColor="@color/Grey_500"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:id="@+id/name_edit_view"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>
+
+    <View
+    android:layout_below="@id/name_view"
+    android:layout_width="225dp"
+    android:layout_height="1dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/Grey_400"/>
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/age_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_caps"
+            android:textSize="14sp"
+            android:textColor="@color/Grey_500"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:id="@+id/age_edit_view"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/age_view"
+        android:layout_width="225dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Grey_400"/>
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gender_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_caps"
+            android:textSize="14sp"
+            android:textColor="@color/Grey_500"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:id="@+id/gender_edit_view"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/gender_view"
+        android:layout_width="225dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Grey_400"/>
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/interest_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/interested_in"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/Grey_500"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/interest_spinner"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/interest_view"
+        android:layout_width="225dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Grey_400"/>
+
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interest_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bio_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/Grey_500"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/bio_edit_view"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_confirm"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_rect_light_gray_border"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bio_view"
+        android:textColor="@color/white_color" />
+
+</RelativeLayout>

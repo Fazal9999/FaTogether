@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "PACKAGED_MANIFESTS",
+    "kind": "Directory"
+  },
+  "applicationId": "com.levyj.al2gether",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "versionCode": 9,
+      "versionName": "2",
+      "outputFile": "x86_64/AndroidManifest.xml"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86"
+        }
+      ],
+      "versionCode": 8,
+      "versionName": "2",
+      "outputFile": "x86/AndroidManifest.xml"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "versionCode": 10,
+      "versionName": "2",
+      "outputFile": "armeabi-v7a/AndroidManifest.xml"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "versionCode": 11,
+      "versionName": "2",
+      "outputFile": "arm64-v8a/AndroidManifest.xml"
+    }
+  ]
+}

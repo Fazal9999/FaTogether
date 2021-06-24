@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/group_rect_detail_bg"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.kptech.peps.customview.CustomFontTextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/user_img"
+            android:singleLine="true"
+            android:text="@string/facebook_app_id"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:textFont="@string/font_bold" />
+
+        <com.kptech.peps.customview.CustomFontTextView
+            android:id="@+id/post_user_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="j vv "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/row_line_color"></View>
+
+</LinearLayout>

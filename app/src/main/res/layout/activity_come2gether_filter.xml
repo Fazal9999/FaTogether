@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@color/Grey_300"
+    tools:context="com.kptech.peps.activity.Come2GetherFilterActivity">
+
+    <RelativeLayout
+        android:id="@+id/c2gFilter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white_color"
+        android:elevation="5dp">
+
+        <com.kptech.peps.customview.CustomFontTextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/come2gether_filters"
+            android:textColor="@color/black"
+            app:textFont="@string/font_bold"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c2gFilter_bar"
+        android:id="@+id/account_type_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_caps"
+            android:textSize="13sp"
+            android:textColor="@color/Grey_800"
+            android:layout_marginStart="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+        <RelativeLayout
+            android:padding="6dp"
+            android:background="@color/white_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_age_range"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/age_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Grey_400"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_caps"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/Grey_800"
+            android:layout_marginStart="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white_color"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/male_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/male_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/Grey_400"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/female_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/female_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/Grey_400"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/other_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/other_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Grey_400"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interested_in"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/Grey_800"
+            android:layout_marginStart="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white_color"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/casual_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casual"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/casual_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:checked="true"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/Grey_400"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dating"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/dating_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:checked="true"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/Grey_400"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/meetUps_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meet_ups"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/meetUps_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:checked="true"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/Grey_400"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chatting_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chatting"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/chatting_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:thumbTint="@color/white_color"
+                    android:elevation="5dp"
+                    android:checked="true"
+                    android:theme="@style/switch_colors"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Grey_400"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

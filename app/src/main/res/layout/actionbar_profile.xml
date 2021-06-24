@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionbar_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+
+        <ImageView
+            android:id="@+id/back_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back_nav"/>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pfp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_user_pic"/>
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_tab"
+            android:textSize="12sp"
+            android:lines="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile_settings"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_settings_tab"/>
+
+    </RelativeLayout>
+</RelativeLayout>

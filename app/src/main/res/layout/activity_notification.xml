@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/actionbar_layout"/>
+
+
+<!--    <android.support.v4.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/pullToRefresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <android.support.v7.widget.RecyclerView-->
+<!--            android:id="@+id/recycler_view_chat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layoutManager="LinearLayoutManager" />-->
+
+<!--    </android.support.v4.widget.SwipeRefreshLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/warning"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:textSize="18dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_tabs"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/white_color"
+        app:tabIndicatorHeight="1dp"
+        app:tabSelectedTextColor="@color/white_color"
+        app:tabTextColor="@color/row_line_color"
+        app:tabBackground="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/menu_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_btn_ht"
+            android:id="@+id/tab1"
+            android:tag="@string/menu_1"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_btn_ht"
+            android:text="@string/menu_2"
+            android:id="@+id/tab2"
+            android:tag="@string/menu_2"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/news_site"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_btn_ht"
+            android:id="@+id/tab3"
+            android:tag="@string/news_site"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_btn_ht"
+            android:text="@string/content_account"
+            android:id="@+id/tab4"
+            android:tag="@string/content_account"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_btn_ht"
+            android:text="@string/podcaset_acctn"
+            android:id="@+id/tab5"
+            android:tag="@string/podcaset_acctn"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="There is no any notifications."
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

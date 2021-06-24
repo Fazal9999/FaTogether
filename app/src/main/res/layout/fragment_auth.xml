@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.AuthenticateFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/first_name_hint"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/first_name"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/last_name_hint"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/last_name"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/world_wide_id"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/user_id"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/dob"
+                android:textColorHint="@color/hint_color">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/date_of_birth"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:focusable="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Upload Selfie page Id:"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/selfie"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="7dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_placeholder" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/transparent_new"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Upload"
+                            android:textColor="@color/white_color" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Upload front page Id:"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/front_page"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="7dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_placeholder" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/transparent_new"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Upload"
+                            android:textColor="@color/white_color" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Upload back page Id:"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/back_page"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="7dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_placeholder" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/transparent_new"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Upload"
+                            android:textColor="@color/white_color" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Upload ID for varification: Photo ID with birthday;\nAddress can be covered"
+                android:textColor="@color/text_color"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:id="@+id/tnc_chek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/tnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tnc_chek"
+                    android:gravity="center_vertical"
+                    android:text="I accept term and conditions."
+                    android:textSize="@dimen/lab_small_txt_size"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="7dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:id="@+id/message_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.kptech.peps.customview.CustomEditText
+                    android:id="@+id/et_msg_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white_color"
+                    android:gravity="center_vertical"
+                    android:hint="Wrire message"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pencil_icon" />
+
+                <ImageView
+                    android:id="@+id/send_msg"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/edt_medium_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="9dp"
+                    android:src="@drawable/send_icon"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/post_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

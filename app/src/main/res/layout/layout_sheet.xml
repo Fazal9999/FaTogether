@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/white_color"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Home Post"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".6dp"
+                    android:background="@color/divider_line_color"></View>
+
+                <TextView
+                    android:id="@+id/world_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Worldwide Post"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".6dp"
+                    android:background="@color/divider_line_color"></View>
+
+                <TextView
+                    android:id="@+id/news_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="News Post"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".6dp"
+                    android:background="@color/divider_line_color"></View>
+
+                <TextView
+                    android:id="@+id/content_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Content Post"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".6dp"
+                    android:background="@color/divider_line_color"></View>
+
+                <TextView
+                    android:id="@+id/podcast_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Podcast Post"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            app:cardBackgroundColor="@color/white_color"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:id="@+id/cancel_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

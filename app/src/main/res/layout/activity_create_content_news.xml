@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/act_bg_color">
+
+    <include layout="@layout/actionbar_layout"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/act_left_padding"
+        android:paddingRight="@dimen/act_right_padding">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/account_name"
+            android:textColorHint="@color/hint_color">
+
+            <com.kptech.peps.customview.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditTextStyle"
+                android:id="@+id/accnt_name"
+                android:textSize="16dp"
+                android:hint=""
+                android:textColor="@color/text_color"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/niche_yes_layout">
+
+            <com.kptech.peps.customview.CustomFontTextView
+                android:id="@+id/focused_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/foucsed_txt"
+                android:textSize="@dimen/lab_large_txt_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/detail_right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/focused_detail"
+                android:layout_alignParentRight="true"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/focused_txt"
+                android:layout_toLeftOf="@+id/focused_detail"
+                android:id="@+id/recyler_grid"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/row_line_color"
+            android:layout_marginTop="5dp"/>
+        <com.kptech.peps.customview.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lab_large_txt_size"
+            android:text="@string/adult_txt"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="5dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:id="@+id/adult_group_layout">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:id="@+id/adult_yes"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:id="@+id/adult_no"
+                android:layout_marginLeft="40dp"/>
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/row_line_color"
+            android:layout_marginTop="5dp"/>
+        <com.kptech.peps.customview.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adult_desc_txt"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/start_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter post start time"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/end_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter post end time"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="7dp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

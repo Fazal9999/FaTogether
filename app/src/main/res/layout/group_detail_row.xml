@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/group_icon_id"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_user_pic"/>
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/group_icon_id"
+                    android:text="First Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/group_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/group_name"
+                    android:layout_marginStart="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/group_mature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/group_username"
+                    android:background="@drawable/shape_rect_gray_border_with_roundedcorner"
+                    android:text="@string/mature"
+                    android:layout_marginStart="8dp"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white_color"
+                    android:visibility="visible" />
+
+                <com.kptech.peps.customview.CustomFontTextView
+                    android:id="@+id/post_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="12.34am"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.kptech.peps.customview.CustomFontTextView
+                android:id="@+id/group_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/text_color"
+                android:text="a"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/group_post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/grp_post_img_ht"
+                    android:layout_marginTop="7dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_height="wrap_content">
+                    <VideoView
+                        android:id="@+id/videoplayerview"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/play_button_video"
+                        android:layout_width="50dp"
+                        android:visibility="gone"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/jc_play_normal"/>
+                </RelativeLayout>
+                <LinearLayout
+android:visibility="gone"
+                    android:id="@+id/player_control_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/spacing_large">
+
+                        <TextView
+                            android:id="@+id/tv_song_current_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1:20"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60" />
+
+                        <ImageButton
+                            android:visibility="invisible"
+                            android:id="@+id/bt_prev"
+                            android:layout_width="0dp"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+
+                            app:srcCompat="@drawable/ic_skip_previous"
+                            app:tint="@color/grey_40" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/bt_play_audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:clickable="true"
+                            android:tint="@android:color/white"
+                            app:backgroundTint="@color/red_500"
+                            app:elevation="2dp"
+                            app:fabSize="normal"
+                            app:rippleColor="@android:color/white"
+                            app:srcCompat="@drawable/ic_play_arrow" />
+
+                        <ImageButton
+                            android:visibility="invisible"
+                            android:id="@+id/bt_next"
+                            android:layout_width="0dp"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+
+                            app:srcCompat="@drawable/ic_skip_next"
+                            app:tint="@color/grey_40" />
+
+                        <TextView
+                            android:id="@+id/tv_song_total_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4:20"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_60" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:visibility="invisible"
+                            android:id="@+id/bt_repeat"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+
+                            app:srcCompat="@drawable/ic_repeat"
+                            app:tint="@color/grey_40" />
+
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/seek_song_progressbar_audio"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/seek_progress_red_small"
+                            android:thumb="@drawable/seek_thumb_red" />
+
+                        <ImageButton
+                            android:visibility="invisible"
+                            android:id="@+id/bt_shuffle"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+
+                            app:srcCompat="@drawable/ic_shuffle"
+                            app:tint="@color/grey_40" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_rect_light_gray_border"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="0"
+                    android:textColor="@color/white_color"
+                    app:drawableStartCompat="@drawable/ic_like_outline" />
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/tv_like"
+                    android:background="@drawable/shape_rect_light_gray_border"
+                    android:drawableStart="@drawable/ic_comment_outline"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="4dp"
+                    android:text="0"
+                    android:textColor="@color/white_color" />
+
+                <TextView
+                    android:id="@+id/post_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableStart="@drawable/ic_more_outline"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/transparent"/>
+
+        <RelativeLayout
+            android:id="@+id/post_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:visibility="gone">
+
+            <com.kptech.peps.customview.CustomEditText
+                android:id="@+id/write_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_medium_height"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:hint="Post comment"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pencil_icon" />
+
+            <ImageView
+                android:id="@+id/grp_post_comment"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/edt_medium_height"
+                android:layout_alignParentRight="true"
+                android:padding="9dp"
+                android:src="@drawable/send_icon"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.kptech.peps.customview.CustomFontTextView
+            android:id="@+id/expand_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:text="@string/show_all_comments"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/Grey_400"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

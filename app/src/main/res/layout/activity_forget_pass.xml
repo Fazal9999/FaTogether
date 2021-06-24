@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_bg_image"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:padding="30dp"
+                android:scaleType="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/act_left_padding"
+                android:layout_marginRight="@dimen/act_right_padding">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:textColorHint="@color/hint_color"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <com.kptech.peps.customview.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/login_email"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:inputType="textWebEmailAddress"
+                        style="@style/CustomEditTextStyle"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reset_password_button"
+                    android:paddingLeft="50dp"
+                    android:background="@drawable/button_background"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white_color"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/reset_password"
+                    android:paddingRight="50dp"
+                    android:layout_marginBottom="30dp"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

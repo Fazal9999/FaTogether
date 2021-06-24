@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_gray_border_with_roundedcorner"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <com.kptech.peps.customview.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/name"
+        android:textSize="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:text="Politics with xx"/>
+
+</RelativeLayout>
