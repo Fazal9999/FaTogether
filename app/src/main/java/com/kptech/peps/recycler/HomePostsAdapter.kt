@@ -370,7 +370,7 @@ class HomePostsAdapter : RecyclerView.Adapter<HomePostsAdapter.MyViewHolder>(), 
         var groupImage: CircleImageView
         var postImage: ImageView
         var postComment: ImageView
-        var postMenu: ImageView
+        //var postMenu: ImageView
         var mWriteComment: EditText
         var videoplayer: VideoView
         var seek_song_progressbar_audio: AppCompatSeekBar
@@ -399,7 +399,7 @@ class HomePostsAdapter : RecyclerView.Adapter<HomePostsAdapter.MyViewHolder>(), 
             postImage = view.findViewById(R.id.group_post_image)
             videoplayer = view.findViewById(R.id.videoplayerview)
             playVideo = view.findViewById(R.id.play_button_video)
-            postMenu = view.findViewById(R.id.post_menu_icon)
+           // postMenu = view.findViewById(R.id.post_menu_icon)
             showComments = view.findViewById(R.id.expand_comments)
             postCommentsLayout = view.findViewById(R.id.post_comment_layout)
             mWriteComment = view.findViewById(R.id.write_comment)
